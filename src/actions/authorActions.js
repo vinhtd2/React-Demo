@@ -7,7 +7,7 @@ export function loadAuthorsSuccess(authors) {
 
 export function loadAuthors() {
   return dispatch => {
-    return AuthorApi.getALlAuthors().then(authors => {
+    return AuthorApi.getAllAuthors().then(authors => {
       dispatch(loadAuthorsSuccess(authors));
     }).catch(error => {
       throw(error);
