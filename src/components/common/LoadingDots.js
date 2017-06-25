@@ -25,7 +25,6 @@ class LoadingDots extends React.Component {
       text += '.';
       dots--;
     }
-    console.log(text)
     return <span {...this.props}>{text}&nbsp;</span>;
   }
 }
